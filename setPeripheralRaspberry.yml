@@ -1,0 +1,18 @@
+---
+
+#################
+# Other setups
+
+- hosts: 
+  - raspberry-vr
+  - raspberry-mz
+  tasks:
+  - name: role basicSetup
+    include_role:
+      name: basicSetup
+
+  - name: role syncthing
+    include_role:
+      name: syncthing
+
+
